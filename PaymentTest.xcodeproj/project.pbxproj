@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72B78846A9FF95DF4604AA94 /* Pods_PaymentTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EE7DC4D69C724A33CB79B9 /* Pods_PaymentTest.framework */; };
 		FA0DA0BA248E5BBE00F05BCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DA0B9248E5BBE00F05BCB /* AppDelegate.swift */; };
 		FA0DA0BC248E5BBE00F05BCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DA0BB248E5BBE00F05BCB /* SceneDelegate.swift */; };
 		FA0DA0C3248E5BC000F05BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0DA0C2248E5BC000F05BCB /* Assets.xcassets */; };
@@ -15,13 +16,12 @@
 		FA0DA0D6248E6AE400F05BCB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0DA0D4248E6AE400F05BCB /* ViewController.xib */; };
 		FA0DA0DD248E786700F05BCB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DA0DB248E786700F05BCB /* SecondViewController.swift */; };
 		FA0DA0DE248E786700F05BCB /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0DA0DC248E786700F05BCB /* SecondViewController.xib */; };
-		FA0DA0E3248E7EB100F05BCB /* V2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DA0E1248E7EB100F05BCB /* V2ViewController.swift */; };
-		FA0DA0E4248E7EB100F05BCB /* V2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0DA0E2248E7EB100F05BCB /* V2ViewController.xib */; };
-		FA0DA0E9248E7FC900F05BCB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DA0E7248E7FC900F05BCB /* TableViewController.swift */; };
-		FA0DA0EA248E7FC900F05BCB /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0DA0E8248E7FC900F05BCB /* TableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FBD7C03B5B7BEFB3DB0D07E /* Pods-PaymentTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentTest.release.xcconfig"; path = "Target Support Files/Pods-PaymentTest/Pods-PaymentTest.release.xcconfig"; sourceTree = "<group>"; };
+		404A550C2B1A1D50DAB0EFFE /* Pods-PaymentTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentTest.debug.xcconfig"; path = "Target Support Files/Pods-PaymentTest/Pods-PaymentTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B1EE7DC4D69C724A33CB79B9 /* Pods_PaymentTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0DA0B6248E5BBE00F05BCB /* PaymentTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0DA0B9248E5BBE00F05BCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA0DA0BB248E5BBE00F05BCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,10 +32,6 @@
 		FA0DA0D4248E6AE400F05BCB /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		FA0DA0DB248E786700F05BCB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FA0DA0DC248E786700F05BCB /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
-		FA0DA0E1248E7EB100F05BCB /* V2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ViewController.swift; sourceTree = "<group>"; };
-		FA0DA0E2248E7EB100F05BCB /* V2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = V2ViewController.xib; sourceTree = "<group>"; };
-		FA0DA0E7248E7FC900F05BCB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		FA0DA0E8248E7FC900F05BCB /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B78846A9FF95DF4604AA94 /* Pods_PaymentTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0A7BF6921AC2F74E97F5DA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1EE7DC4D69C724A33CB79B9 /* Pods_PaymentTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7F3AA120B0892B10EAC48C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				404A550C2B1A1D50DAB0EFFE /* Pods-PaymentTest.debug.xcconfig */,
+				1FBD7C03B5B7BEFB3DB0D07E /* Pods-PaymentTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA0DA0AD248E5BBE00F05BCB = {
 			isa = PBXGroup;
 			children = (
 				FA0DA0B8248E5BBE00F05BCB /* PaymentTest */,
 				FA0DA0B7248E5BBE00F05BCB /* Products */,
+				E7F3AA120B0892B10EAC48C1 /* Pods */,
+				B0A7BF6921AC2F74E97F5DA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +87,6 @@
 				FA0DA0B9248E5BBE00F05BCB /* AppDelegate.swift */,
 				FA0DA0BB248E5BBE00F05BCB /* SceneDelegate.swift */,
 				FA0DA0DF248E7E5300F05BCB /* Variant1 */,
-				FA0DA0E0248E7E6B00F05BCB /* Variant2 */,
 				FA0DA0C2248E5BC000F05BCB /* Assets.xcassets */,
 				FA0DA0C4248E5BC000F05BCB /* LaunchScreen.storyboard */,
 				FA0DA0C7248E5BC000F05BCB /* Info.plist */,
@@ -90,17 +105,6 @@
 			path = Variant1;
 			sourceTree = "<group>";
 		};
-		FA0DA0E0248E7E6B00F05BCB /* Variant2 */ = {
-			isa = PBXGroup;
-			children = (
-				FA0DA0E1248E7EB100F05BCB /* V2ViewController.swift */,
-				FA0DA0E2248E7EB100F05BCB /* V2ViewController.xib */,
-				FA0DA0E7248E7FC900F05BCB /* TableViewController.swift */,
-				FA0DA0E8248E7FC900F05BCB /* TableViewController.xib */,
-			);
-			path = Variant2;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA0DA0CA248E5BC000F05BCB /* Build configuration list for PBXNativeTarget "PaymentTest" */;
 			buildPhases = (
+				0D771D057E8792DB2C062672 /* [CP] Check Pods Manifest.lock */,
 				FA0DA0B2248E5BBE00F05BCB /* Sources */,
 				FA0DA0B3248E5BBE00F05BCB /* Frameworks */,
 				FA0DA0B4248E5BBE00F05BCB /* Resources */,
+				8ECA0C5162E3BEAB13E2A349 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,13 +168,53 @@
 				FA0DA0DE248E786700F05BCB /* SecondViewController.xib in Resources */,
 				FA0DA0D6248E6AE400F05BCB /* ViewController.xib in Resources */,
 				FA0DA0C6248E5BC000F05BCB /* LaunchScreen.storyboard in Resources */,
-				FA0DA0EA248E7FC900F05BCB /* TableViewController.xib in Resources */,
 				FA0DA0C3248E5BC000F05BCB /* Assets.xcassets in Resources */,
-				FA0DA0E4248E7EB100F05BCB /* V2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D771D057E8792DB2C062672 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaymentTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ECA0C5162E3BEAB13E2A349 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentTest/Pods-PaymentTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentTest/Pods-PaymentTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaymentTest/Pods-PaymentTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA0DA0B2248E5BBE00F05BCB /* Sources */ = {
@@ -176,11 +222,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0DA0DD248E786700F05BCB /* SecondViewController.swift in Sources */,
-				FA0DA0E9248E7FC900F05BCB /* TableViewController.swift in Sources */,
 				FA0DA0BA248E5BBE00F05BCB /* AppDelegate.swift in Sources */,
 				FA0DA0D5248E6AE400F05BCB /* ViewController.swift in Sources */,
 				FA0DA0BC248E5BBE00F05BCB /* SceneDelegate.swift in Sources */,
-				FA0DA0E3248E7EB100F05BCB /* V2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +358,7 @@
 		};
 		FA0DA0CB248E5BC000F05BCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 404A550C2B1A1D50DAB0EFFE /* Pods-PaymentTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -331,6 +376,7 @@
 		};
 		FA0DA0CC248E5BC000F05BCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FBD7C03B5B7BEFB3DB0D07E /* Pods-PaymentTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

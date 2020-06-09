@@ -7,16 +7,25 @@
 //
 
 import UIKit
+import Bond
+import ReactiveKit
 
 class SecondViewController: UIViewController {
     @IBOutlet weak var selectView: UIView!
     @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var paymentButton: UIButton!
+    @IBOutlet weak var transferButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupView()
+        self.setupObservers()
+        self.moveIn()
+    }
+    
+    func setupView(){
         self.selectView.roundCorners([.topLeft, .topRight], radius: 10)
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
-        self.moveIn()
     }
     
     func moveIn() {
@@ -38,21 +47,24 @@ class SecondViewController: UIViewController {
         }
     }
     
-    @IBAction func xClose(_ sender: Any) {
-        self.moveOut()
-    }
-    
-    @IBAction func firstButton(_ sender: Any) {
-        print("Вы выбрали переводы")
-        self.moveOut()
-    }
-    
-    @IBAction func secondButton(_ sender: Any) {
-        print("Вы выбрали платежи")
-        self.moveOut()
-    }
-    @IBAction func tapView(_ sender: Any) {
-        self.moveOut()
+    func setupObservers(){
+        self.closeButton.reactive.tap.observeNext { (tap) in
+            self.moveOut()
+        }
+        
+        self.paymentButton.reactive.tap.observeNext { (tap) in
+            print("Вы выбрали платежи")
+            self.moveOut()
+        }
+        
+        self.transferButton.reactive.tap.observeNext { (tap) in
+            print("Вы выбрали переводы")
+            self.moveOut()
+        }
+        
+        self.view.reactive.tapGesture().observeNext{ (tap) in
+            self.moveOut()
+        }
     }
 }
 

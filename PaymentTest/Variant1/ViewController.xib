@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="PaymentTest" customModuleProvider="target">
             <connections>
+                <outlet property="menuButton" destination="H4L-69-nG2" id="HT0-Sf-sk9"/>
                 <outlet property="textLabel" destination="ylw-c1-ubv" id="X8e-rk-4SP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
