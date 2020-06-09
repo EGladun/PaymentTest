@@ -53,13 +53,17 @@ class SecondViewController: UIViewController {
         }
         
         self.paymentButton.reactive.tap.observeNext { (tap) in
-            print("Вы выбрали платежи")
+            let nextVC = TemplateViewController()
+            nextVC.type = .payment
             self.moveOut()
+            self.navigationController?.pushViewController(nextVC, animated: true)
         }
         
         self.transferButton.reactive.tap.observeNext { (tap) in
-            print("Вы выбрали переводы")
+            let nextVC = TemplateViewController()
+            nextVC.type = .transfer
             self.moveOut()
+            self.navigationController?.pushViewController(nextVC, animated: true)
         }
         
         self.view.reactive.tapGesture().observeNext{ (tap) in

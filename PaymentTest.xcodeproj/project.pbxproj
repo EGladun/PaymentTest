@@ -16,6 +16,8 @@
 		FA0DA0D6248E6AE400F05BCB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0DA0D4248E6AE400F05BCB /* ViewController.xib */; };
 		FA0DA0DD248E786700F05BCB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DA0DB248E786700F05BCB /* SecondViewController.swift */; };
 		FA0DA0DE248E786700F05BCB /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0DA0DC248E786700F05BCB /* SecondViewController.xib */; };
+		FA4FCAE9248F7956004E2EB8 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4FCAE7248F7956004E2EB8 /* TemplateViewController.swift */; };
+		FA4FCAEA248F7956004E2EB8 /* TemplateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4FCAE8248F7956004E2EB8 /* TemplateViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		FA0DA0D4248E6AE400F05BCB /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		FA0DA0DB248E786700F05BCB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FA0DA0DC248E786700F05BCB /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		FA4FCAE7248F7956004E2EB8 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
+		FA4FCAE8248F7956004E2EB8 /* TemplateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemplateViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +90,9 @@
 			children = (
 				FA0DA0B9248E5BBE00F05BCB /* AppDelegate.swift */,
 				FA0DA0BB248E5BBE00F05BCB /* SceneDelegate.swift */,
-				FA0DA0DF248E7E5300F05BCB /* Variant1 */,
+				FA0DA0DF248E7E5300F05BCB /* ViewController */,
+				FA4FCAE5248F78AE004E2EB8 /* SecondViewController */,
+				FA4FCAE6248F78CA004E2EB8 /* TemplateScreen */,
 				FA0DA0C2248E5BC000F05BCB /* Assets.xcassets */,
 				FA0DA0C4248E5BC000F05BCB /* LaunchScreen.storyboard */,
 				FA0DA0C7248E5BC000F05BCB /* Info.plist */,
@@ -94,15 +100,31 @@
 			path = PaymentTest;
 			sourceTree = "<group>";
 		};
-		FA0DA0DF248E7E5300F05BCB /* Variant1 */ = {
+		FA0DA0DF248E7E5300F05BCB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				FA0DA0D3248E6AE400F05BCB /* ViewController.swift */,
 				FA0DA0D4248E6AE400F05BCB /* ViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FA4FCAE5248F78AE004E2EB8 /* SecondViewController */ = {
+			isa = PBXGroup;
+			children = (
 				FA0DA0DB248E786700F05BCB /* SecondViewController.swift */,
 				FA0DA0DC248E786700F05BCB /* SecondViewController.xib */,
 			);
-			path = Variant1;
+			path = SecondViewController;
+			sourceTree = "<group>";
+		};
+		FA4FCAE6248F78CA004E2EB8 /* TemplateScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FA4FCAE7248F7956004E2EB8 /* TemplateViewController.swift */,
+				FA4FCAE8248F7956004E2EB8 /* TemplateViewController.xib */,
+			);
+			path = TemplateScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +190,7 @@
 				FA0DA0DE248E786700F05BCB /* SecondViewController.xib in Resources */,
 				FA0DA0D6248E6AE400F05BCB /* ViewController.xib in Resources */,
 				FA0DA0C6248E5BC000F05BCB /* LaunchScreen.storyboard in Resources */,
+				FA4FCAEA248F7956004E2EB8 /* TemplateViewController.xib in Resources */,
 				FA0DA0C3248E5BC000F05BCB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0DA0DD248E786700F05BCB /* SecondViewController.swift in Sources */,
+				FA4FCAE9248F7956004E2EB8 /* TemplateViewController.swift in Sources */,
 				FA0DA0BA248E5BBE00F05BCB /* AppDelegate.swift in Sources */,
 				FA0DA0D5248E6AE400F05BCB /* ViewController.swift in Sources */,
 				FA0DA0BC248E5BBE00F05BCB /* SceneDelegate.swift in Sources */,

@@ -21,27 +21,23 @@ class ViewController: UIViewController {
         self.configObservers()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     func configScreen() {
         self.textLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        self.menuButton.roundCorners(.allCorners, radius: 10)
     }
     
     func configObservers(){
-//        self.menuButton.reactive.tap.observeNext { (tap) in
-//            let popUpVC = SecondViewController()
-//            self.addChild(popUpVC)
-//            popUpVC.view.frame = self.view.frame
-//            self.view.addSubview(popUpVC.view)
-//            popUpVC.didMove(toParent: self)
-//        }
-    }
-
-    
-    @IBAction func onActionTapped(_ sender: Any) {
-        let popUpVC = SecondViewController()
-        self.addChild(popUpVC)
-        popUpVC.view.frame = self.view.frame
-        self.view.addSubview(popUpVC.view)
-        popUpVC.didMove(toParent: self)
+        self.menuButton.reactive.tap.observeNext { (tap) in
+            let popUpVC = SecondViewController()
+            self.addChild(popUpVC)
+            popUpVC.view.frame = self.view.frame
+            self.view.addSubview(popUpVC.view)
+            popUpVC.didMove(toParent: self)
+        }
     }
     
 }
